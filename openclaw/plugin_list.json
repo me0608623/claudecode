@@ -1,0 +1,29 @@
+{
+  "github_monitor_plugins": [
+    {
+      "name": "mcp-github-explorer",
+      "purpose": "實作 Model Context Protocol，直接串接 GitHub API 搜尋 MCP Servers。",
+      "enabled": true,
+      "config": {
+        "focus_topics": ["mcp-server", "claude-skill", "openclaw-plugin"]
+      }
+    },
+    {
+      "name": "browser-use-connector",
+      "purpose": "驅動 Playwright 瀏覽 GitHub Trending 頁面，抓取動態內容。",
+      "enabled": true,
+      "config": {
+        "headless": true
+      }
+    },
+    {
+      "name": "trend-analyzer",
+      "purpose": "分析 Star 增長率並根據 OpenClaw 兼容性進行評分。",
+      "enabled": true,
+      "config": {
+        "min_star_growth": 50,
+        "update_interval_days": 30
+      }
+    }
+  ]
+}

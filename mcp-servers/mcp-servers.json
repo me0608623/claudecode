@@ -1,0 +1,22 @@
+{
+  "_comment": "將此內容合併到 ~/.claude.json 的 mcpServers 欄位中，路徑需依實際環境調整",
+  "mcpServers": {
+    "isaac-sim": {
+      "type": "stdio",
+      "command": "/path/to/uv",
+      "args": [
+        "run",
+        "--directory",
+        "/path/to/nvidia-isaac-mcp",
+        "nvidia-isaac-mcp"
+      ],
+      "env": {}
+    },
+    "isaacsim-mcp": {
+      "type": "stdio",
+      "command": "/path/to/isaacsim-mcp-venv/bin/isaac-mcp-server",
+      "args": [],
+      "env": {}
+    }
+  }
+}
